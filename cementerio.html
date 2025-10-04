@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+    <!-- ==========================================================
+         GEOSPATIAL PRO MÉXICO – Página corporativa de SIG Cementerial
+         Autor: Tu nombre
+         ========================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEOSPATIAL PRO MÉXICO | Precisión que construye futuro</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- ESTILOS PROPIOS -->
+    <style>
+        :root{
+            --cement-gris-oscuro: #2F2F2F;
+            --cement-gris-medio: #6B6B6B;
+            --cement-hueso: #F5F5F1;
+            --cement-esmeralda: #005F4E;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cement-hueso);
+            color: var(--cement-gris-oscuro);
+        }
+        /* Hero */
+        .hero{
+            background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('topo_panteon.jpeg') center/cover no-repeat;
+            color: var(--cement-hueso);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero h1{ font-size: 3rem; font-weight: 700; }
+        .hero .lead{ font-size: 1.4rem; }
+        /* Botón personalizado */
+        .btn-cement{
+            background-color: var(--cement-esmeralda);
+            border: none;
+            color: #fff;
+        }
+        .btn-cement:hover{
+            background-color: #004438;
+            color: #fff;
+        }
+        /* Secciones */
+        section{ padding: 80px 0; }
+        .bg-cement-dark{ background-color: var(--cement-gris-oscuro); color: var(--cement-hueso); }
+        .bg-cement-green{ background-color: var(--cement-esmeralda); color: #fff; }
+        /* Cards */
+        .card{ border: none; border-radius: .75rem; }
+        .card i{ font-size: 2.2rem; color: var(--cement-esmeralda); }
+        /* Footer */
+        footer a{ color: var(--cement-hueso); text-decoration: none; }
+        footer a:hover{ text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<!-- ==========================================================
+     HERO / CABECERA
+========================================================== -->
+<header class="hero">
+    <div class="container text-center">
+        <h1><i class="bi bi-geo-alt"></i> GEOSPATIAL PRO MÉXICO</h1>
+        <p class="lead">Precisión que construye futuro</p>
+        <a href="#intro" class="btn btn-cement btn-lg mt-3">
+            <i class="bi bi-arrow-down-circle"></i> Conoce nuestra propuesta
+        </a>
+    </div>
+</header>
+
+<!-- ==========================================================
+     MENÚ DE NAVEGACIÓN FIJO (Opcional)
+========================================================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-cement-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="bi bi-geo"></i> GEOSPATIAL PRO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">Introducción</a></li>
+        <li class="nav-item"><a class="nav-link" href="#objetivo">Objetivo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#alcance">Alcance</a></li>
+        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#casos">Casos de uso</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modelo">Modelo de negocio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ==========================================================
+     INTRODUCCIÓN
+========================================================== -->
+<section id="intro">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="mb-3"><i class="bi bi-journal-text"></i> Introducción</h2>
+                <p class="mb-0">
+                    Los panteones y cementerios enfrentan el reto de modernizar sus procesos de gestión para responder a la creciente demanda de servicios eficientes, transparentes y accesibles.  
+                    La implementación de un <strong>Sistema de Información Geográfica (SIG)</strong> permite integrar la información espacial y administrativa en una sola plataforma, optimizando la administración de los espacios y mejorando la experiencia de los usuarios.
+                </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="panteon.jpeg" class="img-fluid rounded-3 shadow" alt="Cementerio aéreo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     OBJETIVO
+========================================================== -->
+<section id="objetivo" class="bg-cement-green">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="bi bi-bullseye"></i> Objetivo del Proyecto</h2>
+        <p class="lead">
+            Diseñar e implementar un sistema integral de gestión cementerial basado en SIG, que centralice información cartográfica, administrativa e histórica, con el fin de:
+        </p>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <i class="bi bi-check2-circle fs-1"></i>
+                <h5 class="mt-2">Garantizar una administración eficiente y transparente.</h5>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-check2-circle fs-1"></i>
+                <h5 class="mt-2">Optimizar el control de espacios y la planeación futura.</h5>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-check2-circle fs-1"></i>
+                <h5 class="mt-2">Ofrecer herramientas digitales de búsqueda y consulta a la ciudadanía.</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     ALCANCE
+========================================================== -->
+<section id="alcance">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-diagram-3"></i> Alcance de los Servicios</h2>
+        <div class="row g-4">
+            <!-- Mapeo -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center p-3">
+                    <i class="bi bi-map"></i>
+                    <h5 class="mt-3">Mapeo y Cartografía Digital</h5>
+                    <ul class="list-unstyled small">
+                        <li>Levantamiento topográfico con dron y/o GPS RTK</li>
+                        <li>Digitalización de infraestructura</li>
+                        <li>Planos digitales interactivos y ortomosaicos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Georreferenciación -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center p-3">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h5 class="mt-3">Georreferenciación e Inventario</h5>
+                    <ul class="list-unstyled small">
+                        <li>Ubicación exacta de cada espacio</li>
+                        <li>Base de datos con identificador único</li>
+                        <li>Registro histórico digitalizado</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sistema Integral -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center p-3">
+                    <i class="bi bi-laptop"></i>
+                    <h5 class="mt-3">Sistema Integral de Administración</h5>
+                    <ul class="list-unstyled small">
+                        <li>Registro digital de difuntos</li>
+                        <li>Control de pagos y renovaciones</li>
+                        <li>Reportes gráficos de ocupación</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Soluciones complementarias -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 text-center p-3">
+                    <i class="bi bi-qr-code"></i>
+                    <h5 class="mt-3">Soluciones Tecnológicas</h5>
+                    <ul class="list-unstyled small">
+                        <li>App móvil de consulta ciudadana</li>
+                        <li>Códigos QR en lápidas</li>
+                        <li>Notificaciones automáticas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     BENEFICIOS
+========================================================== -->
+<section id="beneficios" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-graph-up"></i> Beneficios Esperados</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h4 class="mb-3"><i class="bi bi-building"></i> Para la Administración</h4>
+                <ul>
+                    <li>Reducción de tiempos en trámites</li>
+                    <li>Registros digitales transparentes y confiables</li>
+                    <li>Planeación estratégica basada en datos</li>
+                    <li>Ahorro en costos de gestión y control</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4 class="mb-3"><i class="bi bi-people"></i> Para la Comunidad</h4>
+                <ul>
+                    <li>Acceso público a la información de manera digital</li>
+                    <li>Localización rápida de tumbas y difuntos</li>
+                    <li>Certificados y trámites digitales inmediatos</li>
+                    <li>Mayor confianza y transparencia en el servicio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     CASOS DE USO
+========================================================== -->
+<section id="casos">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-lightbulb"></i> Casos de Uso / Ejemplos Prácticos</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-4 h-100">
+                    <h5><i class="bi bi-pin-map"></i> Ejemplo 1: SIG para Panteón Municipal</h5>
+                    <ul>
+                        <li>Registro y digitalización de 5,000 tumbas</li>
+                        <li>Búsqueda interactiva por nombre, fecha y ubicación</li>
+                        <li>Mapa digital accesible al público</li>
+                        <li>Control de espacios disponibles en tiempo real</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 h-100">
+                    <h5><i class="bi bi-pc-display"></i> Ejemplo 2: Módulos del Sistema Integral</h5>
+                    <ul>
+                        <li>Registro digital de difuntos</li>
+                        <li>Control de pagos y renovaciones</li>
+                        <li>Historial de mantenimiento</li>
+                        <li>Certificados digitales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     MODELO DE NEGOCIO
+========================================================== -->
+<section id="modelo" class="bg-cement-dark">
+    <div class="container">
+        <h2 class="text-center mb-5"><i class="bi bi-cash-stack"></i> Modelo de Negocio y Propuesta de Implementación</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h4>Etapas del Proyecto</h4>
+                <ol>
+                    <li>Levantamiento y diagnóstico inicial</li>
+                    <li>Cartografía digital y georreferenciación</li>
+                    <li>Desarrollo de la base de datos cementerial</li>
+                    <li>Implementación del sistema integral SIG</li>
+                    <li>Capacitación de personal</li>
+                    <li>Soporte y actualización anual</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <h4>Modalidades de Contratación</h4>
+                <ul>
+                    <li><strong>Proyecto llave en mano:</strong> entrega completa del sistema y base de datos.</li>
+                    <li><strong>Mantenimiento anual:</strong> actualización de información y soporte técnico.</li>
+                    <li><strong>Licenciamiento SaaS (opcional):</strong> plataforma en la nube, accesible desde web/móvil.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     DIFERENCIADORES
+========================================================== -->
+<section id="diferenciadores" class="bg-cement-green">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="bi bi-star"></i> Diferenciadores Clave</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="bi bi-geo-alt fs-1"></i>
+                <h5 class="mt-2">Especialización en soluciones SIG aplicadas al sector funerario.</h5>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-drone fs-1"></i>
+                <h5 class="mt-2">Tecnología geoespacial de vanguardia (drones, GPS RTK, bases georreferenciadas).</h5>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-layers fs-1"></i>
+                <h5 class="mt-2">Fusión de administración, cartografía e historial en un solo sistema.</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==========================================================
+     CONCLUSIÓN
+========================================================== -->
+<section id="conclusion">
+    <div class="container text-center">
+        <h2 class="mb-4"><i class="bi bi-check2-all"></i> Conclusión</h2>
+        <p class="lead">
+            La presente propuesta ofrece una solución integral e innovadora para la administración de cementerios, resolviendo problemáticas de control, ocupación y consulta ciudadana.  
+            La digitalización cementerial con SIG permitirá que las administraciones operen con mayor eficiencia y transparencia, garantizando un servicio moderno y confiable para la comunidad.
+        </p>
+    </div>
+</section>
+
+<!-- ==========================================================
+     FOOTER / CONTACTO
+========================================================== -->
+<footer id="contacto" class="bg-cement-dark py-4">
+    <div class="container text-center">
+        <h5 class="mb-2"><i class="bi bi-envelope"></i> Contacto</h5>
+        <p class="mb-1">Correo: <a href="mailto:info@gspromexico.mx">info@gspromexico.mx</a></p>
+        <p class="mb-0">Tel: <a href="tel:+526146631547">+52 614 663 1547</a></p>
+        <div class="mt-3">
+            <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-linkedin fs-4"></i></a>
+        </div>
+        <small class="text-muted">© 2025 Geospatial Pro México. Todos los derechos reservados.</small>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
